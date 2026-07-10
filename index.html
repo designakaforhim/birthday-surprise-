@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Miee, Ru 💗</title>
+
+<style>
+body{
+margin:0;
+padding:0;
+font-family: 'Segoe UI', sans-serif;
+background:linear-gradient(135deg,#ffe6f0,#fff7fb);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
+}
+
+.container{
+text-align:center;
+padding:30px;
+}
+
+h1{
+color:#ff4f8b;
+font-size:42px;
+}
+
+p{
+font-size:20px;
+color:#555;
+}
+
+button{
+margin-top:25px;
+padding:15px 35px;
+border:none;
+border-radius:50px;
+background:#ff6fa8;
+color:white;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+background:#ff4f8b;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h1>🎁 For Miee, Ru 💗</h1>
+
+<p>
+Someone spent a lot of time making this...<br><br>
+Promise you'll read till the end? 🥺
+</p>
+
+<button onclick="nextPage()">
+I Promise 🤍
+</button>
+
+</div>
+
+<script>
+function nextPage(){
+document.body.innerHTML=`
+<div class="container">
+<h1>👀 Just a Few Questions...</h1>
+
+<p>
+Are you smiling already? 😊<br><br>
+Did you think this would be just another birthday wish? 👀<br><br>
+Do you trust me enough to keep reading? 💗
+</p>
+
+<button onclick="alert('To be continued... ❤️')">
+Continue ✨
+</button>
+</div>
+`;
+}
+</script>
+
+</body>
+</html>
