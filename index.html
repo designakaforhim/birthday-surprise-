@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For Miee, Ru 💗</title>
+<title>For My Miee Ru 💗</title>
 
 <style>
 body{
 margin:0;
 padding:0;
-font-family: 'Segoe UI', sans-serif;
-background:linear-gradient(135deg,#ffe6f0,#fff7fb);
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(135deg,#ffe6f0,#fff8fc);
 display:flex;
 justify-content:center;
 align-items:center;
@@ -21,16 +21,20 @@ overflow:hidden;
 .container{
 text-align:center;
 padding:30px;
+max-width:700px;
+animation:fadeIn 1.2s;
 }
 
 h1{
 color:#ff4f8b;
 font-size:42px;
+margin-bottom:20px;
 }
 
 p{
 font-size:20px;
 color:#555;
+line-height:1.8;
 }
 
 button{
@@ -46,46 +50,89 @@ transition:.3s;
 }
 
 button:hover{
-transform:scale(1.05);
 background:#ff4f8b;
+transform:scale(1.05);
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
 }
 </style>
-</head>
 
+</head>
 <body>
 
 <div class="container">
-<h1>🎁 For Miee, Ru 💗</h1>
+
+<h1>🎁 For My Miee Ru 💗</h1>
 
 <p>
-Someone spent a lot of time making this...<br><br>
-Promise you'll read till the end? 🥺
+Your teddy bear spent a lot of time making this... 🧸🤍
+<br><br>
+
+Promise you'll read till the end!? 🥺👉👈
+<br><br>
+
+No skipping...<br>
+No cheating...<br>
+And absolutely NO closing this page! 😤🤍
 </p>
 
 <button onclick="nextPage()">
-I Promise 🤍
+Okay, Teddy Bear 💗
 </button>
 
 </div>
 
 <script>
+
 function nextPage(){
+
 document.body.innerHTML=`
+
 <div class="container">
+
 <h1>👀 Just a Few Questions...</h1>
 
 <p>
-Are you smiling already? 😊<br><br>
-Did you think this would be just another birthday wish? 👀<br><br>
-Do you trust me enough to keep reading? 💗
+
+Ruhh... are you already smiling, sweetheart? 🥺💕
+
+<br><br>
+
+What did you think this was?<br>
+
+Just another birthday wish... or maybe something I've been wanting to tell you? 👀❤️
+
+<br><br>
+
+One last question...
+
+<br><br>
+
+Do you trust your girl enough to keep reading? 🤍✨
+
 </p>
 
-<button onclick="alert('To be continued... ❤️')">
-Continue ✨
+<button onclick="alert('Then let\\'s continue... 💌')">
+
+I trust you. 🧸💗
+
 </button>
+
 </div>
+
 `;
+
 }
+
 </script>
 
 </body>
